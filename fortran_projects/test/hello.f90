@@ -7,7 +7,7 @@ program hello
 1   write(*, free, advance="no") "Kolik rohlíků?"
     error = 1
     read (*, *, err=4) a
-    
+
 2   write(*, free, advance="no") "Kolik zaplatíš?"
     error = 2 
     read (*, *, err=4) b
