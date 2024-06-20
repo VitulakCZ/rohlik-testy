@@ -50,7 +50,9 @@ pub fn main() !void {
                     } else if (std.mem.eql(u8, user_input, "C") or std.mem.eql(u8, user_input, "c")) {
                         break;
                     } else if (std.mem.eql(u8, user_input, "E") or std.mem.eql(u8, user_input, "e")) {
-                        std.os.exit(0);
+                        run = false;
+                        run2 = false;
+                        break;
                     } else {
                         try stdout.writeAll("Jsi kokot!\n");
                         continue;
