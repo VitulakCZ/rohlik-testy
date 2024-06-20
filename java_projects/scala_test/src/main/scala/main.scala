@@ -26,7 +26,7 @@ def loop(rohlikyPenize: RohlikyPenize): Array[Int] =
     pocetCena
 
 def isPenize(pocetCena: Array[Int]): Boolean =
-    if pocetCena(1) >= pocetCena(0) * 3 then true else false
+    pocetCena(1) >= pocetCena(0) * 3
 
 @main
 def main(): Unit =
