@@ -37,7 +37,7 @@ L:
 
 		var maloVyber string
 	L2:
-		fmt.Print("To nestačí, zaplať víc! Z = Znovu, C = Změnit cenu: ")
+		fmt.Print("To nestačí, zaplať víc! Z = Znovu, C = Změnit cenu, E = Exit: ")
 		fmt.Scan(&maloVyber)
 		velkoVyber := strings.ToUpper(maloVyber)
 
@@ -45,7 +45,9 @@ L:
 			continue L
 		} else if velkoVyber == "C" {
 			goto L1
-		}
+		} else if velkoVyber == "E" {
+            break
+        }
 
 		fmt.Println("Jsi kokot!")
 		goto L2

@@ -1,14 +1,14 @@
 <?php
 
 start:
-$x = readline("Kolik rohlíků: ");
+$x = readline("Kolik rohlíků? ");
 if (!is_numeric($x)) {
     echo "Jsi kokot!\n";
     goto start;
 }
 
 middle:
-$y = readline("Kolik zaplatíš: ");
+$y = readline("Kolik zaplatíš? ");
 if (!is_numeric($y)) {
     echo "Jsi kokot!\n";
     goto middle;

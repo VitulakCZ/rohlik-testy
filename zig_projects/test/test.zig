@@ -27,12 +27,12 @@ pub fn main() !void {
 
     var run: bool = true;
     while (run) {
-        try stdout.writeAll("Kolik rohlíků: ");
+        try stdout.writeAll("Kolik rohlíků? ");
         rohliky = try ask_user() orelse continue;
 
         var run2: bool = true;
         while (run2) {
-            try stdout.writeAll("Kolik zaplatíš: ");
+            try stdout.writeAll("Kolik zaplatíš? ");
             penize = try ask_user() orelse continue;
             if (penize >= rohliky * 3) {
                 try stdout.print("{any}\n", .{rohliky});

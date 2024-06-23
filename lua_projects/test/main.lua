@@ -18,16 +18,19 @@ end
 
 ::ende::
 if y < x * 3 then
-	io.write("To nestačí, zaplať víc! Z = Znovu, C = Změnit cenu: ")
+	io.write("To nestačí, zaplať víc! Z = Znovu, C = Změnit cenu, E = Exit: ")
 	local z = io.read()
 	z = string.upper(z)
 	if z == "Z" then
 		goto start
 	elseif z == "C" then
 		goto middle
+    elseif z == "E" then
+        goto realend
 	end
 	print("Jsi kokot!")
 	goto ende
 end
 
 print(x)
+::realend::
